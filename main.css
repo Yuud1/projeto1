@@ -1,0 +1,125 @@
+header{
+    padding: 0 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header, section h2 {
+    font-family: "Bungee", cursive;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    color: #ecf0f1;
+    font-size: 24px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1, section h2 {
+    font-weight: normal;
+}
+
+header nav li {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.brands_list img {
+    height: 60px;
+
+}
+
+.brands_list li {
+    display: inline;
+    
+}
+
+section .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    padding: 16px 0;
+}
+
+section {
+    padding: 0;
+}
+
+section h2 {
+    margin: 0;
+    padding: 0 8px;
+    color: #182c61;
+}
+
+section p {
+    margin: 8px;
+}
+
+.imghome {
+    padding: 32px 0;
+}
+
+.social_links img {
+    height: 24px;
+}
+
+#contato .container {
+    display: flex;
+    flex-direction: row; /* Alinha os itens em uma linha */
+    flex-wrap: wrap;
+}
+
+.contato_metodo form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os campos do formulário */
+}
+
+.contato_metodo form button {
+    align-self: flex-start; /* Alinhar o botão ao início */
+    padding: 10px 20px;
+}
+
+.social_links {
+    display: flex;
+    gap: 10px; /* Espaço entre os ícones sociais */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contato_metodo {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px; /* Ajuste para definir a largura máxima */
+    margin: 0 auto; /* Centraliza o elemento na horizontal */
+    padding: 16px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    border-radius: 8px; /* Canto arredondado */
+    background-color: #f4f4f4; /* Cor de fundo leve */
+}
+
+#contato .container  {
+    flex-direction: row;
+}
