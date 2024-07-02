@@ -4,19 +4,22 @@ header{
     color: #ecf0f1;
 }
 
-body {
+body, textarea, input {
     font-family: "Roboto", sans-serif;
 }
 
-header, section h2 {
+header, section h2, section h3 {
     font-family: "Bungee", cursive;
+}
+section h3, section h2{
+    color: #182c61;
 }
 
 header nav li {
     display: inline;
     margin-left: 16px;
     color: #ecf0f1;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 header nav li a {
@@ -34,24 +37,46 @@ header h1, section h2 {
     font-weight: normal;
 }
 
-header nav li {
-    font-size: 16px;
-}
-
 .container {
     max-width: 1280px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;    
+    padding: 16px;
+    align-items: center;
 }
 
 .brands_list img {
-    height: 60px;
+    width: 100px; 
+    height: auto;
 
 }
 
-.brands_list li {
+.imghome {
+padding: 8px 16px;
+margin: 0 auto;
+}
+
+.brands_list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.brands_list li{
     display: inline;
-    
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; 
+}
+
+.brands_list .redondo{
+    width: 70px; /* Ajuste conforme necessário */
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 section .container {
@@ -62,32 +87,23 @@ section .container {
     padding: 16px 0;
 }
 
-section {
-    padding: 0;
-}
-
-section h2 {
+#body h2 {
     margin: 0;
     padding: 0 8px;
     color: #182c61;
+}
+
+#contato h2 {
+    width: 100%;
+    padding: 16px;
 }
 
 section p {
     margin: 8px;
 }
 
-.imghome {
-    padding: 32px 0;
-}
-
 .social_links img {
     height: 24px;
-}
-
-#contato .container {
-    display: flex;
-    flex-direction: row; /* Alinha os itens em uma linha */
-    flex-wrap: wrap;
 }
 
 .contato_metodo form {
@@ -98,7 +114,17 @@ section p {
 
 .contato_metodo form button {
     align-self: flex-start; /* Alinhar o botão ao início */
-    padding: 10px 20px;
+    padding: 5px 10px;
+    background-color: #182c61;
+    color: #ecf0f1;
+    font-family: "Bungee", cursive;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #253e84;
 }
 
 .social_links {
@@ -109,17 +135,37 @@ section p {
     margin: 0;
 }
 
-.contato_metodo {
+.contato_metodo, .metade{
     flex: 1;
-    min-width: 300px;
-    max-width: 400px; /* Ajuste para definir a largura máxima */
-    margin: 0 auto; /* Centraliza o elemento na horizontal */
+    max-width: 48%;
     padding: 16px; /* Espaçamento interno */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
     border-radius: 8px; /* Canto arredondado */
     background-color: #f4f4f4; /* Cor de fundo leve */
+    margin: 0 1%; /* Margem entre as caixas */
 }
 
-#contato .container  {
-    flex-direction: row;
+.particoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.metade {
+    display: grid;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    gap: 10px;
+}
+
+textarea:focus, input:focus {
+    outline-color: #182c61;
+}
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
 }
